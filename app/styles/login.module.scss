@@ -1,0 +1,63 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #222;
+  padding: 2.5rem 2rem; /* taller vertical padding */
+  border-radius: 12px;
+  width: 380px; /* slightly wider */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* spacing between form elements */
+  color: #fff;
+}
+
+.modal label {
+  font-size: 0.95rem;
+}
+
+.modal input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #333;
+  color: #fff;
+  margin-bottom: 1rem; /* space between fields */
+}
+
+.submitBtn {
+  background: #0af;
+  border: none;
+  padding: 0.8rem 0;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  width: 120px; /* fixed width for a neat button */
+  margin: 1rem auto 0 auto; /* centers horizontally */
+}
+
+.submitBtn:hover {
+  background: #08c;
+}
+
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

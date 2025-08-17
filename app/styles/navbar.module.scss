@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+  color: #fff;
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.loginBtn,
+.signupBtn {
+  background: transparent;
+  border: 1px solid #0af;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #0af;
+  transition: 0.3s;
+}
+
+.loginBtn:hover,
+.signupBtn:hover {
+  background: #0af;
+  color: #fff;
+}
+
+/* Modal styles */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #222;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 350px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #333;
+  color: #fff;
+}
+
+.submitBtn {
+  background: #0af;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.submitBtn:hover {
+  background: #08c;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
